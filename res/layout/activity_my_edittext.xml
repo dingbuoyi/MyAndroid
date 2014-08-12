@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.dean.myandroid.view.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                      android:id="@+id/edit_scroll_view"
+                                      android:orientation="vertical"
+                                      android:layout_width="fill_parent"
+                                      android:layout_height="fill_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <EditText
+                android:id="@+id/edit1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="姓名"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="100dp"
+                />
+        <!-- 放一个看不见的VIEW 防止下面那个EditText一进来就获取焦点 -->
+        <LinearLayout
+                android:id="@+id/edit_text_hack_layout"
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+        <EditText
+                android:id="@+id/edit2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="年龄"
+                android:layout_marginTop="100dp"
+                />
+
+        <Button
+                android:layout_marginTop="100dp"
+                android:id="@+id/edit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="提交"
+                android:textSize="19sp"/>
+    </LinearLayout>
+</org.dean.myandroid.view.MyScrollView>

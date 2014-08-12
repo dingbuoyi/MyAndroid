@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyAndroid</string>
+    <string name="please_input_phone_verification_code">请输入手机号 +86 %1$s 收到的验证码</string>
+    <string name="please_wait_or_get_verification_code">验证码短信可能有一定延迟，请耐心稍作等待，或点击
+        <a href="1">
+            <font color="#3399ff">重新获取验证码</font>
+        </a>
+    </string>
+</resources>
